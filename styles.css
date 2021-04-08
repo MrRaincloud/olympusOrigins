@@ -1,0 +1,463 @@
+@font-face {
+    src: url(./Font/LeagueSpartan-Bold.otf);
+    font-family: league;
+}
+
+/* UNIVERSAL */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    color: #243E56;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Font Styling */
+
+h1 {
+    font-size: 3.5rem;
+    font-family: league, sans-serif;
+    line-height: 4.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: league, sans-serif;
+}
+
+h4 {
+    font-size: 2rem;
+    font-family: league, sans-serif;
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+/* BANNER CONTENT */
+
+#logo {
+    margin: 2vh auto 4.5vh auto;
+}
+
+.banner {
+    height: 800px;
+    background: url(./Images/Cloud.png), #AAECF2;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#banner-p {
+    margin: 2em 0;
+}
+
+/* Form */
+
+.form {
+    max-width: 600px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.email {
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    width: 75%;
+    height: 3em;
+    padding: 0.8em;
+    border-radius: 2px;
+    border-style: none;
+    box-shadow: 0px 4px 4px 1px #888888FF;
+    -webkit-appearance: none;
+}
+
+.email:focus {
+    outline: none;
+    border-color: #243E56;
+    box-shadow: 0 0 10px #243E56;
+}
+
+.button {
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    width: 20%;
+    height: 3em;
+    padding: 0.8em;
+    border-radius: 2px;
+    border-style: none;
+    box-shadow: 0px 4px 4px 1px #888888FF;
+    cursor: pointer;
+    background: #243E56;
+    color: white;
+    transition: all 0.3s;
+    -webkit-appearance: none;
+}
+
+.button:hover {
+    box-shadow: 0px 4px 6px 2px #888888FF;
+    background: #178299;
+}
+
+.hidden {
+    display: none;
+}
+
+
+#subtitle {
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    margin-top: 1.5em;
+}
+
+/* Floating God */
+.banner-god {
+    position: absolute;
+    right: 1vw;
+    bottom: -5vw;
+    transition: transform 0.5s;
+}
+
+.banner-god:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1300px) {
+    .banner {
+        height: 900px;
+    }
+
+    .banner-god {
+        position: absolute;
+        right: 5vw;
+        bottom: -5vw;
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .banner {
+        height: 1000px;
+    }
+
+    .banner-god {
+        position: absolute;
+        right: 5vw;
+        bottom: -8vw;
+        width: 400px;
+    }
+}
+
+@media (max-width: 550px) {
+    .banner {
+        height: 1100px;
+    }
+
+    .banner-god {
+        position: absolute;
+        right: 5vw;
+        bottom: -8vw;
+        width: 400px;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner {
+        height: 800px;
+    }
+
+    .banner-god {
+        position: absolute;
+        right: 5vw;
+        bottom: -8vw;
+        width: 250px;
+    }
+}
+
+@media (max-width: 350px) {
+    .banner {
+        height: 100vh;
+    }
+
+    .banner-god {
+        display: none;
+    }
+}
+
+
+
+/* MY CURRENT HUSTLES */
+
+.hustle {
+    text-align: center;
+    background: url(./Images/Cloud2.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 20vh;
+}
+
+.hustle-header {
+    margin-top: 12vh;
+}
+
+.hustle-header p {
+    margin-top: 0.5em;
+}
+
+.hustle-flex {
+    width: 70vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.hustle-flex div {
+    display: flex;
+    width: 220px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.hustle-flex img {
+    margin-bottom: 1.5em;
+    transition: transform 0.5s;
+}
+
+.hustle-flex img:hover {
+    transform: scale(1.1);
+}
+
+/* ABOUT ME & REASON */
+
+.about,
+.reason {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20vh;
+    padding-top: 5vh;
+}
+
+.about {
+    background: url(./Images/Cloud3.png), #EAFAFC;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.reason {
+    background: url(./Images/Cloud4.png), #D4F5F8;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.about div,
+.reason div {
+    max-width: 510px;
+}
+
+.about div:nth-of-type(1) {
+    max-width: 600px;
+    margin-right: 10vw;
+}
+
+.reason div:nth-of-type(2) {
+    max-width: 600px;
+    margin-left: 10vw;
+}
+
+.reason div:nth-of-type(1) {
+    margin-left: 5vw;
+}
+
+.about h2,
+.reason h2{
+    margin-bottom: 1em;
+}
+
+.about p:nth-of-type(n+2),
+.reason p:nth-of-type(n+2) {
+    font-weight: 400;
+}
+
+.about img,
+.reason img {
+    transition: transform 0.5s;
+}
+
+.about img:hover,
+.reason img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1045px) {
+    .about,
+    .reason {
+        flex-direction: column;
+    }
+
+    .about h2,
+    .reason h2{
+        margin-top: 1em;
+        text-align: center;
+}
+
+    .about p,
+    .reason p {
+        text-align: center;
+    }
+
+    .about div:nth-of-type(1) {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .reason div:nth-of-type(2) {
+        order: -1;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .reason div:nth-of-type(1) {
+        margin-left: 0;
+    }
+
+    html.touch *:hover {
+        all: unset! important;
+    }
+}
+
+
+/* GAIN */
+
+.gain {
+    padding-top: 10vh;
+    background: #BFF1F5;
+}
+
+.gain h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+.gain h4 {
+    text-align: center;
+    margin-bottom: 0.7em;
+}
+
+.gain-flex {
+    display: flex;
+    max-width: 80vw;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.gain-flex div {
+    width: 30%;
+    min-width: 280px;
+    max-width: 450px;
+    height: fit-content;
+    text-align: center;
+    background: white;
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 4px #c4c4c4;
+}
+
+.gain img {
+    margin: 0 auto 1em auto
+}
+
+.gain p {
+    font-weight: 400;
+}
+
+@media (max-width: 1300px) {
+    .gain-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gain-flex div {
+        width: 100%;
+    }
+
+    .gain-flex div:nth-of-type(2) {
+        order: -1;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    padding-top: 30em;
+    background: url(./Images/FooterCloud.png), #BFF1F5;
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer img {
+    padding-bottom: 3vh;
+    margin: 0 auto;
+} 
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    .footer {
+        background-size: cover;
+        padding-top: 10em;
+    }
+
+    .gain p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
